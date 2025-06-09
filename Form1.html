@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巡檢點-消防泵</title>
+    <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2em;
+      /* display: flex; */
+      /* justify-content: center; */
+    }
+
+    .form-wrapper {
+      width: 50%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      display: flex;
+      justify-content: center;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e9e9e9;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    td:first-child, td:nth-child(3) {
+        font-weight: bold;
+        background-color: #f0f0f0;
+        }
+
+    input[type="text"],
+    input[type="file"],
+    input[type="datetime-local"],
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+    <div>
+    <table  cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <tbody>
+    <tr>
+      <td>巡檢項目</td>
+      <td>編號11 消防泵</td>
+      <td>巡檢編號</td>
+      <td>1995</td>
+    </tr>
+    <!-- 巡檢項目 1 -->
+    <tr>
+      <td>判定基準</td>
+      <td colspan="3">機房是否清潔、有無雜物</td>
+    </tr>
+    <tr>
+      <td>檢查方法</td>
+      <td colspan="3"><input type="checkbox">目視 <input type="checkbox">手動</td>
+    </tr>
+    <tr>
+      <td>判定結果</td>
+      <td colspan="3">
+        <input type="radio" name="result1">良好
+        <input type="radio" name="result1">異常
+        <input type="radio" name="result1">其他
+      </td>
+    </tr>
+    <tr>
+      <td>檢測數值</td>
+      <td colspan="3"><input type="text" style="width: 100%;"></td>
+    </tr>
+    <tr>
+      <td>上傳圖片</td>
+      <td colspan="3"><input type="file"></td>
+    </tr>
+    <tr>
+      <td>備註</td>
+      <td colspan="3"><textarea style="width: 100%;"></textarea></td>
+    </tr>
+
+    <!-- 巡檢內容 2 -->
+    <tr><td>判定基準</td><td colspan="3">泵浦周邊是否清潔乾燥</td></tr>
+    <tr><td>檢查方法</td><td colspan="3"><input type="checkbox">目視 <input type="checkbox">手動</td></tr>
+    <tr>
+      <td>判定結果</td>
+      <td colspan="3">
+        <input type="radio" name="result2">良好
+        <input type="radio" name="result2">異常
+        <input type="radio" name="result2">其他
+      </td>
+    </tr>
+    <tr><td>檢測數值</td><td colspan="3"><input type="text" style="width: 100%;"></td></tr>
+    <tr><td>上傳圖片</td><td colspan="3"><input type="file"></td></tr>
+    <tr><td>備註</td><td colspan="3"><textarea style="width: 100%;"></textarea></td></tr>
+
+    <!-- 巡檢內容 3 -->
+    <tr><td>判定基準</td><td colspan="3">控制盤表示燈開關是否功能正常</td></tr>
+    <tr><td>檢查方法</td><td colspan="3"><input type="checkbox">目視 <input type="checkbox">手動</td></tr>
+    <tr>
+      <td>判定結果</td>
+      <td colspan="3">
+        <input type="radio" name="result3">良好
+        <input type="radio" name="result3">異常
+        <input type="radio" name="result3">其他
+      </td>
+    </tr>
+    <tr><td>檢測數值</td><td colspan="3"><input type="text" style="width: 100%;"></td></tr>
+    <tr><td>上傳圖片</td><td colspan="3"><input type="file"></td></tr>
+    <tr><td>備註</td><td colspan="3"><textarea style="width: 100%;"></textarea></td></tr>
+
+    <!-- 巡檢內容 4 -->
+    <tr><td>判定基準</td><td colspan="3">接地線有無依規定接地，有無漏電情形</td></tr>
+    <tr><td>檢查方法</td><td colspan="3"><input type="checkbox">目視 <input type="checkbox">手動</td></tr>
+    <tr>
+      <td>判定結果</td>
+      <td colspan="3">
+        <input type="radio" name="result4">良好
+        <input type="radio" name="result4">異常
+        <input type="radio" name="result4">其他
+      </td>
+    </tr>
+    <tr><td>檢測數值</td><td colspan="3"><input type="text" style="width: 100%;"></td></tr>
+    <tr><td>上傳圖片</td><td colspan="3"><input type="file"></td></tr>
+    <tr><td>備註</td><td colspan="3"><textarea style="width: 100%;"></textarea></td></tr>
+
+    <!-- 底部填寫資訊 -->
+    <tr>
+      <td>巡檢人</td>
+      <td>XXX</td>
+      <td>巡檢時間</td>
+      <td>202X-XX-XX XX:XX:XX</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="text-align: right;">
+            <button>儲存</button>
+            <button>取消</button>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
